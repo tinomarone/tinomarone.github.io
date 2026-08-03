@@ -72,7 +72,7 @@
     color:var(--ink-soft);
     margin:0 0 1.4rem;
   }
-  article{margin:0 0 2.1rem}
+  article{margin:0 0 2.4rem}
   h3{
     font-size:1.18rem;
     font-weight:500;
@@ -86,9 +86,13 @@
     font-size:.72rem;
     color:var(--ink-soft);
     display:block;
-    margin-bottom:.5rem;
+    margin-bottom:.6rem;
   }
-  p{margin:0 0 .6rem}
+  p{margin:0 0 .7rem}
+  .team{
+    font-size:.95rem;
+    color:var(--ink-soft);
+  }
   .note{
     font-family:"IBM Plex Mono",ui-monospace,monospace;
     font-size:.76rem;
@@ -115,10 +119,12 @@
   <header>
     <span class="label">Washington University in St. Louis</span>
     <h1>Constantino Marone</h1>
-    <p class="standfirst">Undergraduate in economics and mathematics. I build and validate datasets from messy administrative records, and I spend most of my time trying to find the reasons my own numbers might be wrong.</p>
+    <p class="standfirst">Undergraduate in economics and mathematics. Expected graduation May 2028.</p>
     <p class="meta">
+      Contact me at<br>
       <a href="mailto:c.b.marone@wustl.edu">c.b.marone@wustl.edu</a><br>
-      <a href="https://github.com/YOURHANDLE">github.com/YOURHANDLE</a>
+      <a href="mailto:constantinomarone@gmail.com">constantinomarone@gmail.com</a><br>
+      <a href="https://github.com/tinomarone">github.com/tinomarone</a>
     </p>
   </header>
 
@@ -130,22 +136,24 @@
     <article>
       <h3>Private equity and hospital acquisitions</h3>
       <span class="when">Research assistant · Prof. Ryan McDevitt · 2026–present</span>
-      <p>Linking Medicare ownership disclosures to a hand-built list of hospital transactions, and working out which apparent ownership changes are real events and which are artifacts of how the filings were processed.</p>
-      <p class="note">Two thirds of deals have no counterpart in the enrollment data. Most of that gap is scope mismatch rather than underreporting, but not all of it.</p>
+      <p class="team">Led by a team of graduate students and economics faculty from Duke University, the University of Illinois Urbana-Champaign, the University of California, Berkeley, Indiana University, Ohio State University, and Washington University in St. Louis.</p>
+      <p>I work with messy administrative data to corroborate and strengthen existing commercial databases on the role of private equity in healthcare. The administrative sources range from PECOS to CCN/AHA and HCRIS. The analysis is mostly in Python (pandas, rapidfuzz), and I also incorporate LLM-assisted extraction and validation.</p>
     </article>
 
     <article>
       <h3>Medicare durable medical equipment fraud</h3>
-      <span class="when">Research assistant · NBER working paper · 2026–present</span>
-      <p>Turning enforcement documents into a structured panel, resolving supplier identifiers across sources, and scoring how much each piece of evidence should be trusted depending on whether it was court-verified or circumstantial.</p>
+      <span class="when">Research assistant · Prof. Ryan McDevitt · NBER working paper · 2026–present</span>
+      <p class="team">Led by a team of graduate students and economics faculty from several universities. I work with a PhD student from Boston University and with Ryan McDevitt at Washington University in St. Louis.</p>
+      <p>I turn enforcement documents into a structured panel, resolving supplier identifiers across sources and scoring how much each piece of evidence should be trusted depending on whether it was court-verified or circumstantial.</p>
       <p class="note">Extraction from unstructured text is never fully reliable. The confidence score exists so downstream users can see where the uncertainty sits instead of inheriting it silently.</p>
     </article>
 
     <article>
       <h3><a href="medicare-competitive-bidding/SERS_paper.pdf">Market outcomes in non-competitive-bidding areas</a></h3>
       <span class="when">Independent seminar paper · 2026</span>
-      <p>An analysis of Medicare DMEPOS markets outside the competitive bidding program, asking what happens to prices and supplier participation in areas the program never reached.</p>
-      <p class="note">Every state was treated at once, so there is no clean control group. The paper argues that this limits what can be identified, and says so rather than working around it.</p>
+      <p class="team">Written with the guidance of Prof. Molly Moore of Boston College, formerly at Washington University in St. Louis.</p>
+      <p>An analysis of Medicare DMEPOS markets outside the initial competitive bidding program, asking what happens to prices, claims, and supplier participation in areas the program reached synthetically. I study the fifteen most rural states to understand how market outcomes there differ from those dominated by metropolitan areas.</p>
+      <p class="note">All fifteen states were treated at once, so there is no control group. The paper argues that this limits what can be identified, but that the rural subset is worth examining precisely because the literature on competitive bidding tends to overlook it.</p>
     </article>
 
     <article>
@@ -157,13 +165,14 @@
 
     <article>
       <h3><a href="extended-essay/euler_mascheroni.pdf">Generalizations of the Euler–Mascheroni constant</a></h3>
-      <span class="when">Extended essay · 2024</span>
-      <p>An investigation of convergence for a family of constants generalizing γ, written at sixteen as my International Baccalaureate extended essay.</p>
+      <span class="when">International Baccalaureate · Extended Essay · 2024</span>
+      <p class="team">Completed individually, with advising from Dr. Elisabetta Pastori.</p>
+      <p>An investigation of convergence for a family of constants generalizing γ, drawing on analytic number theory, calculus, and analysis. It builds on Tom Apostol's work on asymptotic expansions.</p>
     </article>
   </section>
 
   <footer>
-    <p class="meta">Last updated August 2026 · Source at <a href="https://github.com/YOURHANDLE/YOURHANDLE.github.io">GitHub</a></p>
+    <p class="meta">Last updated August 2026 · Source at <a href="https://github.com/tinomarone/tinomarone.github.io">GitHub</a></p>
   </footer>
 
 </div>
