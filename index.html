@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Constantino Marone — Research</title>
+<meta name="description" content="Economics and Mathematics, Washington University in St. Louis. Empirical research on administrative data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --ink:#1C2128;
+    --ink-soft:#4A5159;
+    --rule:#DFDBD2;
+    --mark:#7A4E3B;
+    --measure:34rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:18px;
+    line-height:1.6;
+    padding:clamp(2.5rem,7vw,6rem) clamp(1.25rem,6vw,3rem) 5rem;
+  }
+  .wrap{max-width:var(--measure);margin:0 auto}
+  .label{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.7rem;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  h1{
+    font-size:clamp(2rem,6vw,2.6rem);
+    font-weight:500;
+    line-height:1.15;
+    margin:.6rem 0 .4rem;
+    letter-spacing:-.01em;
+  }
+  .standfirst{
+    font-size:1.06rem;
+    color:var(--ink-soft);
+    margin:0 0 1.2rem;
+  }
+  .meta{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.78rem;
+    line-height:2;
+    color:var(--ink-soft);
+    word-break:break-word;
+  }
+  .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .meta a:hover{border-bottom-color:var(--mark)}
+  hr{
+    border:0;
+    border-top:1px solid var(--rule);
+    margin:2.8rem 0;
+  }
+  section{margin:0 0 2.6rem}
+  h2{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.7rem;
+    font-weight:500;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 1.4rem;
+  }
+  article{margin:0 0 2.1rem}
+  h3{
+    font-size:1.18rem;
+    font-weight:500;
+    margin:0 0 .15rem;
+    line-height:1.3;
+  }
+  h3 a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--mark)}
+  h3 a:hover{color:var(--mark)}
+  .when{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72rem;
+    color:var(--ink-soft);
+    display:block;
+    margin-bottom:.5rem;
+  }
+  p{margin:0 0 .6rem}
+  .note{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.76rem;
+    line-height:1.65;
+    color:var(--mark);
+    border-left:2px solid var(--rule);
+    padding-left:.85rem;
+    margin-top:.7rem;
+  }
+  .note::before{content:"caveat / ";color:var(--ink-soft)}
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.4rem;
+    border-top:1px solid var(--rule);
+  }
+  @media (min-width:900px){
+    body{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="label">Washington University in St. Louis</span>
+    <h1>Constantino Marone</h1>
+    <p class="standfirst">Undergraduate in economics and mathematics. I build and validate datasets from messy administrative records, and I spend most of my time trying to find the reasons my own numbers might be wrong.</p>
+    <p class="meta">
+      <a href="mailto:c.b.marone@wustl.edu">c.b.marone@wustl.edu</a><br>
+      <a href="https://github.com/YOURHANDLE">github.com/YOURHANDLE</a>
+    </p>
+  </header>
+
+  <hr>
+
+  <section>
+    <h2>Research</h2>
+
+    <article>
+      <h3>Private equity and hospital acquisitions</h3>
+      <span class="when">Research assistant · Prof. Ryan McDevitt · 2026–present</span>
+      <p>Linking Medicare ownership disclosures to a hand-built list of hospital transactions, and working out which apparent ownership changes are real events and which are artifacts of how the filings were processed.</p>
+      <p class="note">Two thirds of deals have no counterpart in the enrollment data. Most of that gap is scope mismatch rather than underreporting, but not all of it.</p>
+    </article>
+
+    <article>
+      <h3>Medicare durable medical equipment fraud</h3>
+      <span class="when">Research assistant · NBER working paper · 2026–present</span>
+      <p>Turning enforcement documents into a structured panel, resolving supplier identifiers across sources, and scoring how much each piece of evidence should be trusted depending on whether it was court-verified or circumstantial.</p>
+      <p class="note">Extraction from unstructured text is never fully reliable. The confidence score exists so downstream users can see where the uncertainty sits instead of inheriting it silently.</p>
+    </article>
+
+    <article>
+      <h3><a href="medicare-competitive-bidding/SERS_paper.pdf">Market outcomes in non-competitive-bidding areas</a></h3>
+      <span class="when">Independent seminar paper · 2026</span>
+      <p>An analysis of Medicare DMEPOS markets outside the competitive bidding program, asking what happens to prices and supplier participation in areas the program never reached.</p>
+      <p class="note">Every state was treated at once, so there is no clean control group. The paper argues that this limits what can be identified, and says so rather than working around it.</p>
+    </article>
+
+    <article>
+      <h3>Value factor construction</h3>
+      <span class="when">In progress · 2026</span>
+      <p>Rebuilding the standard and timely-price versions of the HML value factor from public data, to see for myself how a lagged-price convention changes the factor's correlation with momentum.</p>
+      <p class="note">A replication is only as good as its handling of look-ahead bias. Notes on what I got wrong first will go in the repository alongside the code.</p>
+    </article>
+
+    <article>
+      <h3><a href="extended-essay/euler_mascheroni.pdf">Generalizations of the Euler–Mascheroni constant</a></h3>
+      <span class="when">Extended essay · 2024</span>
+      <p>An investigation of convergence for a family of constants generalizing γ, written at sixteen as my International Baccalaureate extended essay.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p class="meta">Last updated August 2026 · Source at <a href="https://github.com/YOURHANDLE/YOURHANDLE.github.io">GitHub</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
